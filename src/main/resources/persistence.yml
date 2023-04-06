@@ -1,0 +1,13 @@
+persistenceUnits:
+#  - name: postgres
+#    dataSource:
+#      jdbcUrl: jdbc:postgresql://localhost:5432/postgres
+#      userName: postgres
+#      password: example
+#      driverClassName: org.postgresql.Driver
+  - name: h2
+    dataSource:
+      jdbcUrl: jdbc:h2:mem:testdb
+      username: sa
+      password: password
+      driverClassName: org.h2.Driver
