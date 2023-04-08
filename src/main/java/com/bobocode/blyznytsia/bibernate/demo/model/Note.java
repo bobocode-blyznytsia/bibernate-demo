@@ -10,6 +10,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.time.LocalDateTime;
+import lombok.ToString;
 
 @NoArgsConstructor
 @Getter
@@ -17,6 +18,7 @@ import java.time.LocalDateTime;
 @EqualsAndHashCode(of = "id")
 @Entity
 @Table(name="notes")
+@ToString
 public class Note {
 
     @Id

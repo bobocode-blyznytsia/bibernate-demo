@@ -1,13 +1,14 @@
 persistenceUnits:
-#  - name: postgres
-#    dataSource:
-#      jdbcUrl: jdbc:postgresql://localhost:5432/postgres
-#      userName: postgres
-#      password: example
-#      driverClassName: org.postgresql.Driver
-  - name: h2
+  - name: remote
     dataSource:
-      jdbcUrl: jdbc:h2:mem:testdb
-      username: sa
-      password: password
-      driverClassName: org.h2.Driver
+      jdbcUrl: jdbc:postgresql://18.157.64.181:5433/blyznytsia
+      userName: bibernate
+      password: dontTellAnyoneItsASecret
+      driverClassName: org.postgresql.Driver
+
+  - name: local
+    dataSource:
+      jdbcUrl: jdbc:postgresql://localhost:5432/bcode
+      userName: bcode
+      password: bcode
+      driverClassName: org.postgresql.Driver
